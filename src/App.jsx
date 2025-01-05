@@ -1,8 +1,18 @@
 import Badge from "./components/badges"
+import Banner from "./components/banners"
 
 function App() {
   return (
-    <Badge variant="square" color="indigo">Badge</Badge>
+    <>
+      <Badge variant="square" color="indigo">Badge</Badge>
+      <Badge variant="square" color="green">Badge</Badge>
+      <Badge variant="pill" color="red">Badge</Badge>
+      <Badge variant="pill" color="yellow">Badge</Badge>
+      <Banner variant="success" header="Congratulations!">Hi, this is a success message</Banner>
+      <Banner variant="error" header="Something went wrong!">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quisquam eligendi et incidunt distinctio dolorem nam corporis dignissimos inventore, facere quasi? Distinctio laboriosam totam repellendus, omnis mollitia dolores ab iusto.</Banner>
+      <Banner variant="warning" header="Attention" isSingleLine={true}></Banner>
+      <Banner header="Update available" isSingleLine={true}></Banner>
+    </>
   );
 }
 
