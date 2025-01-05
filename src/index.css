@@ -1,0 +1,9 @@
+.badge {
+    font-family: 'Inter', sans-serif;
+    font-size: '14px';
+    transition: all 0.2s ease;
+}
+  
+.badge:hover {
+    opacity: 0.7;
+}
