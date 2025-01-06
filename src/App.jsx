@@ -1,7 +1,12 @@
 import Badge from './components/badge'
 import Banner from './components/banner'
 import Card from './components/card'
+import Testimonial from './components/testimonial'
+
 import successIcon from './assets/success.svg'
+import mrRobot from './assets/mrrobot.png'
+import logo from './assets/logo.svg'
+
 function App() {
   return (
     <>
@@ -16,6 +21,8 @@ function App() {
       <Card header='Easy deployment' text='Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.' />
       <Card header='Easy deployment' color="red" text='Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.' />
       <Card header='Easy deployment' icon={successIcon} text='Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.' />
+      <Testimonial img={mrRobot} text='"What If Changing The World Was Just About Being Here, By Showing Up No Matter How Many Times We Get Told We Don’t Belong..."' name="Mr Robot" title="Cyber-Security Engineer" />
+      <Testimonial logo={logo} logoText='Workcation' text='"What If Changing The World Was Just About Being Here, By Showing Up No Matter How Many Times We Get Told We Don’t Belong..."' name="Mr Robot" title="Cyber-Security Engineer" />
     </>
   );
 }

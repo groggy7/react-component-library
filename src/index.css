@@ -60,6 +60,7 @@ body {
     align-items: center;
     position: relative;
     text-align: center;
+    margin-bottom: 12px;
 }
 
 .card-header {
@@ -80,4 +81,135 @@ body {
     top: -20px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.testimonial {
+    display: flex;
+    position: relative;
+    padding: 80px;
+}
+
+.person-image {
+    width: 280px;
+    position: absolute;
+    left: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 12px;
+}
+
+.quote-icon {
+    color: "#FFFFFF40";
+    width: 48px;
+    height: 48px;
+}
+
+.testimonial-content {
+    margin-left: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.testimonial-text {
+    font-size: 24px;
+    margin: 0;
+}
+
+.testimonial-person-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 0;
+}
+
+.testimonial-person-name {
+    font-weight: 700;
+}
+
+.testimonial-no-image {
+    margin-top: 24px;
+    position: relative;
+    background-color: #F9FAFB;
+    overflow: hidden;
+    padding: 80px 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+  
+.testimonial-no-image::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 70%;
+    background-image: radial-gradient(#e5e7eb 2px, transparent 2.5px);
+    background-size: 20px 20px;
+    opacity: 0.5;
+}
+
+.testimonial-no-image .logo-section {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.testimonial-no-image .testimonial-person-info {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.testimonial-no-image .testimonial-person-name {
+    color: #111827;
+    font-weight: 500;
+}
+
+.testimonial-no-image .testimonial-person-title {
+    color: #6B7280;
+}
+
+@media (max-width: 700px) {
+    .testimonial {
+        padding: 148px 16px 64px;
+        margin-top: 200px;
+    }
+
+    .testimonial-content {
+        margin-left: 0;
+        margin-top: 36px;
+    }
+
+    .person-image {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -40%;
+    }
+
+    .testimonial-no-image {
+        align-items: start;
+        padding: 72px 16px;
+    }
+
+    .testimonial-no-image .logo-section {
+        align-self: center;
+    }
+
+    .testimonial-no-image::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 320px;
+        height: 30%;
+        background-image: radial-gradient(#e5e7eb 2px, transparent 2.5px);
+        background-size: 20px 20px;
+        opacity: 0.5;
+    }
 }
