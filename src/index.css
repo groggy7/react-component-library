@@ -175,6 +175,42 @@ body {
     color: #6B7280;
 }
 
+.tooltip {
+    padding: 1em;
+    display: flex;
+    align-items: start;
+    border-radius: 8px;
+    gap: 1em;
+    width: 384px;
+    margin-bottom: 1em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tooltip * {
+    margin: 0;
+}
+
+.tooltip svg {
+    flex-shrink: 0;
+    display: block;
+}
+
+.tooltip-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tooltip-header {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.tooltip-text {
+    font-size: 14px;
+    font-weight: 400;
+}
+
 @media (max-width: 700px) {
     .testimonial {
         padding: 148px 16px 64px;

@@ -6,6 +6,7 @@ import Testimonial from './components/testimonial'
 import successIcon from './assets/success.svg'
 import mrRobot from './assets/mrrobot.png'
 import logo from './assets/logo.svg'
+import Tooltip from './components/tooltip'
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
       <Card header='Easy deployment' icon={successIcon} text='Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.' />
       <Testimonial img={mrRobot} text='"What If Changing The World Was Just About Being Here, By Showing Up No Matter How Many Times We Get Told We Don’t Belong..."' name="Mr Robot" title="Cyber-Security Engineer" />
       <Testimonial logo={logo} logoText='Workcation' text='"What If Changing The World Was Just About Being Here, By Showing Up No Matter How Many Times We Get Told We Don’t Belong..."' name="Mr Robot" title="Cyber-Security Engineer" />
+      <Tooltip header="Archive notes" text="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur." color="green" style="light" />
+      <Tooltip header="Archive notes" text="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur." color="magenta" style="dark" />
+      <Tooltip header="Archive notes" text="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur." color="black" style="light" />
+      <Tooltip header="Archive notes" text="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur." color="blue" style="dark" />
     </>
   );
 }
